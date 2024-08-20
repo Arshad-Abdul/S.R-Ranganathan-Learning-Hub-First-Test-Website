@@ -1,0 +1,124 @@
+.topheader{
+    /* position:fixed;
+    z-index: 999; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: 'Work Sans', sans-serif;
+    background: #ff4f81;
+    padding: .2em ;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    flex-wrap: wrap;
+    transition: all .3s ease-in-out;  
+}
+a:hover{
+cursor:pointer;
+}
+.topHeaderLeft>ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 5px;
+   flex-wrap: wrap;    
+}
+.topHeaderLeft ul>li{
+    display: inline-block;
+    color: #fff;
+    font-size:  12px;
+}
+.topHeaderLeft>ul>li>a{
+    text-decoration: none;
+    text-transform: none;
+    color: #fff;
+    cursor: pointer;
+}
+.topHeaderLeft>ul i{
+    color: #fff;
+}
+.topHeaderLeft>ul>li>a:hover { 
+    color: #000;
+} 
+.social_icons{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.social_icons>a> i  { 
+     font-size: 15px; 
+    background: #333; 
+    padding: 8px 10px; 
+    color: #fff; 
+    border: 1px solid #333; 
+    transition: 0.5s all; 
+    -webkit-transition: 0.5s all; 
+    -o-transition: 0.5s all; 
+    -ms-transition: 0.5s all; 
+    -moz-transition: 0.5s all;
+}
+@media(max-width:992px){
+.topheader{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    
+    transition: all .3s ease-in-out;
+
+}
+.topHeaderLeft ul>li{
+    display: inline-block;
+    color: #fff;
+    font-size:  10px;
+}
+.social_icons>a> i{
+    font-size: 12px;
+    padding: 6px 8px;
+}
+.topHeaderRight{
+    width: 100%;
+}
+} 
+
+@media(max-width:540px){    
+    .topheader>{        
+        transition: all .3s ease;
+    }
+    .social_icons>a> i{
+        font-size: 8px;
+        padding: 6px 8px;
+    }
+    .topHeaderLeft ul>li{
+        display: inline-block;
+        color: #fff;
+        font-size:  8px;
+    }
+}
+@media(max-width:360px){
+    .topheader{        
+        transition: all .3s ease;
+    }
+    .social_icons>a> i{
+        font-size: 8px;
+        padding: 4px 6px;
+    }
+}
+
+    
+@media (min-width:768px) {
+    
+
+.topHeaderRight{
+    /* height: 30px; */
+    width: 30%;
+    padding: 0;
+    margin: 0;
+    display:flex;
+    justify-content:flex-end;
+    margin-right:20px;
+    /* overflow: hidden; */
+}}
+
+
+

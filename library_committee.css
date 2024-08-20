@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 10px;
+    gap: 20px;
+    padding:20px;
+}
+.profile p{
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+}
+
+.profile {
+    flex: 1 1 calc(25% - 40px); /* Adjust width to 25% and account for margin */
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+
+    overflow: hidden;
+    opacity: 0; /* Initial hidden state */
+    transform: translateY(20px); /* Initial state with slight downward movement */
+    transition: opacity 1s ease-out, transform 1s ease-out; /* Smooth transition */
+}
+
+.profile.reveal {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Back to original position */
+}
+
+.profile:hover {
+    transform: translateY(-10px) scale(1.03); /* Scale profile on hover */
+    transition: all 0.3s ease-out; /* Smooth transition for scale on hover */
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+    border: 1px transparent;
+}
+
+.profile img {
+    width: 100%;
+    height: auto;
+    max-width:300px;
+    border-radius: 50%;
+}
+
+.profile:hover img {
+    cursor: pointer;
+}
+
+.profile h2 {
+    margin: 10px 0 5px;
+    font-size: clamp(14px, 1vw, 17px);
+    transition: color .3s ease-in-out;
+}
+.profile:hover h2{
+    color: #ff4f81;
+    
+}
+.profile:hover p{
+    font-weight: 600;
+}
+
+
+.profile p {
+    margin: 0;
+}
+
+@media (max-width:960px){
+    .profile{
+        flex: 1 1 calc(50% - 10px);
+    }
+    .profile img{
+        width: 300px;
+        height: auto;
+    }
+    .profile h2{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile {
+        flex: 1 1 100%; 
+    }
+    .profile img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+    }
+    .profile h2{
+        font-size:22px;
+    }
+   .chairperson {
+       width:100%;     
+
+}
+}
+.chairperson{
+   position:relative;
+   flex:1 0 100%;
+   padding:20px;
+   margin:20px;
+ 
+
+}
+.chairperson img{
+
+max-height:350px;
+max-width:350px;
+}

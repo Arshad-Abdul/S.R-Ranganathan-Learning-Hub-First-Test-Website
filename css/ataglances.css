@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+
+.glance-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+ z-index:0;
+}
+
+.glance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  width: calc(25% - 20px);
+  min-height: 180px;
+  background-color:#f8f8f8bc;
+  border: 1px solid #fff;
+  margin: 10px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  position: relative;
+  line-height: 1.5rem;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in;
+  color: #000;
+}
+
+.glance-container>:nth-child(1):hover {
+  background-color: #9df9ef;
+}
+.glance-container>:nth-child(2):hover {
+  background-color: #ff4f81;
+}
+.glance-container>:nth-child(3):hover {
+  background-color: #d0bdf4;
+}
+.glance-container>:nth-child(4):hover {
+  background-color: #51e2f5;
+}
+.glance-container>:nth-child(5):hover {
+  background-color: #a0d2eb;
+}
+.glance-container>:nth-child(6):hover {
+  background-color: #9df9ef;
+}
+.glance-container>:nth-child(7):hover {
+  background-color: #ff4f81;
+}
+.glance-container>:nth-child(8):hover {
+  background-color: #d0bdf4;
+}
+
+.glance:hover {
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+.glanceLink:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.glance-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start; 
+  height: 70px;
+  margin-top: 0;
+  padding: 5px 0;
+  z-index: 0;
+}
+.glance>h2 {
+  text-align: center;
+  margin: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.glance>h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Mukta', sans-serif;
+}
+
+.counter {
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+@media (max-width:1220px) {
+ .glance>h2 {
+    font-size: 18px;
+  }
+  .glance>h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .glance-container {
+    justify-content: center;
+  }
+  .glance {
+    width: calc(50% - 20px);
+  }
+  .glance>h2 {
+    font-size: 20px;
+  }
+  .glance>h3 {
+    font-size: 16px;
+  }
+  .glance {
+    padding-bottom: 20px;
+  }
+}

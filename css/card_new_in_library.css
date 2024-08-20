@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap");
+:root {
+  --color-white: hsl(0, 0%, 92%);
+  --color-light-gray: hsl(0, 0%, 87%);
+  --color-dark-gray: hsl(0, 0%, 40%);
+  --color-black: hsl(0, 0%, 05%);
+
+  --p-inline: clamp(0.75rem, 0.6286rem + 0.5178vw, 2rem);
+  --p-block: 1rem;
+  --row-gap: 1rem;
+  --border-radius: 0.5rem;
+
+  --fs-sm: 0.8rem;
+  --fs-lg: 1.5rem;
+}
+.card-image-wrapper>img {
+  max-width: 100%;
+}
+.cards-wrapper {
+  width: min(100vw, 100%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin: 20px;
+  
+}
+.card {
+  width: min(100%, 320px);
+  padding-inline: var(--p-inline);
+  padding-block: var(--p-block);
+  background-color: var(--color-white);
+  color: var(--color-black);
+  border-radius: var(--border-radius);
+
+  & .card-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: var(--row-gap);
+  }
+
+  & .card-image-wrapper {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+
+    & img {
+      border-radius: var(--border-radius);
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      aspect-ratio: 16/9;
+    }
+  }
+
+  & .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0;
+    row-gap: calc(var(--row-gap) * 0.75);
+  }
+
+  & .card-title {
+    font-size: var(--fs-lg);
+    /* font-family: "Sedan", serif; */
+  }
+
+  & .card-desc {
+    font-size: var(--fs-sm);
+    color: var(--color-dark-gray);
+  }
+
+  & .card-btn {
+    width: fit-content;
+    margin-block-start: auto;
+    padding-inline: var(--p-inline);
+    padding-block: calc(var(--p-block) * 0.5);
+    border: 1px solid var(--color-black);
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    cursor: pointer;
+    & span {
+      color: #000;
+      /* mix-blend-mode: difference; */       
+    }
+
+    &:hover {
+      background-color: #ff4f81;
+      border: #ff4f81 solid 1px;
+      color: #fff;
+      
+      
+    }
+
+  }
+  
+}
+
+  .card-btn a{
+    text-decoration: none;
+  }
+  .card-btn a:hover{
+    color: #fff;
+
+  }

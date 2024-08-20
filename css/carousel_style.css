@@ -1,0 +1,25 @@
+ .carousel-caption .btn {
+    visibility: visible !important; /* Override visibility property */
+    opacity: 1 !important; /* Ensure full opacity */
+    background-color: #FF4F81;
+    border: #FF4F81;
+    transition: all .3s ease-in-out;
+
+  }
+  .carousel-caption .btn a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease-in-out;
+
+  }
+  .carousel-caption .btn a:hover{
+    color: #FF4F81;
+  }
+  .carousel-caption .btn:hover{
+    transform: scale(1.1);
+    color: #FF4F81;
+    background-color: #fff;
+    border:1px solid #FF4F81;
+
+
+  }

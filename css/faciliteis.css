@@ -1,0 +1,101 @@
+.facilities_container{
+    width: 100%;
+    
+    padding: 0 8%;
+    margin: 20px;
+}
+.facilities_container h1{
+    text-transform: uppercase;
+    text-align:center;
+    /* padding-top: 10%; */
+    margin-bottom:60px ;
+    font-weight: 600;
+    /* position: relative; */
+}
+/* .facilities_container h1::after{
+    content: '';
+    background:#ff4f81 ;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+} */
+.facilities_row{
+   
+      display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+    color: #000;
+    /* place-items: center; */
+}
+.facilities{
+   flex:1 0 calc(25% - 2rem);
+   background-color: #f8f8f8bc;
+   padding: 25px 10px;
+   text-align: center;
+   border-radius: 5px;
+   transition: transform .5s;
+   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+   /* cursor: pointer; */
+   display: flex; /* Use flexbox to center content */
+   flex-direction: column; /* Arrange children in a column */
+   justify-content: start; /* Center vertically */
+   align-items: center; /* Center horizontally */
+   transition: all .3s ease;
+  
+
+}
+
+.facilities_row>:nth-child(1):hover {
+    background-color: #9df9ef;
+  }
+  .facilities_row>:nth-child(2):hover {
+    background-color: #ff4f81;
+  }
+  .facilities_row>:nth-child(3):hover {
+    background-color: #d0bdf4;
+  }
+  .facilities_row>:nth-child(4):hover {
+    background-color: #51e2f5;
+  }
+  .facilities_row>:nth-child(5):hover {
+    background-color: #a0d2eb;
+  }
+  .facilities_row>:nth-child(6):hover {
+    background-color: #9df9ef;
+  }
+  .facilities_row>:nth-child(7):hover {
+    background-color: #ff4f81;
+  }
+  .facilities_row>:nth-child(8):hover {
+    background-color: #d0bdf4;
+  }
+
+.facilities:hover{
+  
+    
+        box-shadow: 0 0 10px rgb(0, 0, 0, 0.5);
+        border-radius: 10px;
+      
+}
+.facilities i{
+   font-size: 40px; 
+   
+}
+.facilities h2{
+    margin-bottom: 8px;
+}
+
+
+
+.facilities ol{
+    text-align: center;
+}
+.facilities ol li{
+    text-align: start;
+}

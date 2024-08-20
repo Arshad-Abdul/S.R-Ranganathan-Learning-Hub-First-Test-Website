@@ -1,0 +1,14 @@
+@media (max-width:768px){
+    .modal-footer{
+        display: flex;
+        align-items: start;
+        justify-content: start;
+      
+        }
+    
+}
+.btn-secondary:hover{
+                background-color: #ff4f81;
+                color: #fff;
+                transition: all .5s ease-in-out;
+                border: #fff 1px solid;

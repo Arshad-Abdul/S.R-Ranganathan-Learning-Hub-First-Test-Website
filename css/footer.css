@@ -1,0 +1,197 @@
+<!--Footer--!>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+
+.footer{
+    display: flex;
+    flex-direction: column;
+   height: auto;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+   
+}
+.footer_section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+    background-color: #141415;
+    margin: 0;
+    width: 100%;
+
+}
+.footer_section{
+    display: flex;
+    
+}
+.aboutus{
+    flex: 0 1 30%;
+}
+
+.contactus{
+    flex: 0 1 30%;
+}
+@media (max-width:720px){
+.aboutus_para{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.aboutus_para>iframe{
+    height: 250px;
+    width: 300px;
+}
+}
+
+.aboutus_para,.addresslist>p{
+    flex-wrap: wrap;   
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: .8em;
+    text-align: left;
+    color: #8b8b96;
+    line-height: 2em;    
+    margin: 0 0 10px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.aboutus>h3{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 20px;   
+    color: #ff4f81;
+    position: relative;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.quickpicks>h3{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 20px;  
+    color: #ff4f81;
+    position: relative;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+}
+.contactus>h3{
+
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    margin-top: 20px;   
+     color: #ff4f81;
+    position: relative;
+    margin-bottom: 1.5em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+
+}
+.quickpicks>ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    
+}
+.contactus>ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.quickpicks_list:last-child{
+    margin-bottom: 0;
+}
+.listlink{
+    text-decoration: none;
+    color: #8b8b96;
+    cursor: pointer;
+    transition: all .3s ease-in;
+}
+.listlink:hover{
+    color: aliceblue;
+}
+.copyright_section{
+    display: flex;
+    text-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #141415;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: azure;
+    padding: 10px;
+    
+}
+@media (max-width:768px) {
+    .footer_section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+    } 
+    .footer{
+        height: auto;
+        display: flex;
+        flex-direction: column;        
+        padding: 20px;
+    } 
+    .copyright_section{
+      width: 100%;
+    }
+}
